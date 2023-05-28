@@ -22,3 +22,8 @@ document.querySelector("button.button-menu-toggle")
     document.querySelector(".nav-links").
       classList.toggle("nav-links-responsive")
   })
+const nav = document.querySelector('.nav');
+
+window.addEventListener('scroll', function () {
+  nav.classList.toggle('active', window.scrollY > 0)
+})
