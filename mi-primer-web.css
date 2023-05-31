@@ -11,42 +11,76 @@ body {
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
 }
 
 h1 {
-    color:#956e79;
-    font-size: 40px;
+    color: #956e79;
+    font-size: 38px;
     font: weight 900px;
     text-align: justify;
     display: flex;
-    margin: auto;
+    margin: 53px;
+    padding: 21px;
 }
 
 .mujer {
     align-items: center;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    margin: 20px;
+    padding: 10px;
 }
 
 .mujer img {
-    grid-column: 2/5;
+    grid-column: 1/4;
 }
 
-.mujer h2 {
+.mujer h1 {
     grid-column: 7/11;
     grid-row: 1;
 }
 
 h2 {
-    color:#956e79;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 11px;
+    margin-bottom: 3px;
+    padding: 20ppx;
+    color: #956e79;
     font-size: 30px;
     text-align: center;
 }
 
-p {
+h3 {
+    display: flex;
+    flex-wrap: nowrap;
     font-size: 18px;
+}
+
+h4 {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+p {
+    font-size: 22px;
     padding: 29px;
     margin: -5px;
+}
+
+.pgray {
+    margin: auto;
+
 }
 
 .contenido {
@@ -54,31 +88,27 @@ p {
     margin: auto;
     padding: 20px;
 }
-.imagenes {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    margin-top: 40px;
-}
-.imagenes img {
-    height: 200px;
-}  
 
-.icons {
+.imagenes {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 40px;
-
 }
 
-.icons fa-brands fa-html5 fa-2xl {
+.imagenes img {
+    height: 200px;
 }
 
-.icons fa-brands fa-css3 {
-}
+.icons {
+    width: 1037px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    height: 50px;
+    padding: 0px;
 
-.icons fa-brands fa-js {
 }
 
 .row {
@@ -92,13 +122,56 @@ p {
     padding: 10px;
 }
 
-.form {
-    text-align: left;
-    text-size-adjust: 0px;
-    margin: auto;
-    padding: 10px;
-    max-width: 1067px;
+.formulario {
+    display: flex;
+    justify-content: center;
 }
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.form {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    background: #d3afb6;
+    border-radius: 8px;
+    margin: 50px;
+    padding: 10px;
+    width: 400px;
+}
+
+.submitBtn {
+    display: flex;
+    flex-direction:row;
+    background-color:transparent;
+	border-radius:5px;
+	border:2px solid #956e79;
+	display:inline-block;
+	cursor:pointer;
+	color:#956e79;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:8px 170px;
+	text-decoration:none;
+
+}
+
+.submitBtn:hover {
+    background-color: #d3afb6;
+    transform: translateY(-2px);
+}
+
 
 @media (max-width: 600px) {
     .column {
@@ -117,11 +190,11 @@ p {
 
     .button-menu-toggle {
         display: block;
-        background-color:#d3afb6;
+        background-color: #d3afb6;
         border: none;
         border-radius: 50px;
         padding: 0 24px;
-        font-family:'Ubuntu', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         font-weight: bold;
         font-size: 20px;
     }
@@ -150,14 +223,14 @@ p {
 }
 
 body {
-    font-family:  'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.nav {
+nav {
     position: fixed;
     width: 100%;
     background-image: url(./hojas.jpg);
-    opacity:0.6;
+    opacity: 0.6;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -166,17 +239,17 @@ body {
 }
 
 .nav.active {
-    background: transparent;
     padding: 15px;
 }
 
 .nav.active .logo,
-.nav.active a {
+.nav.active .logo a {
     color: #000;
 }
+
 .nav.active a:hover {
     background: #000;
-    color:#353434;
+    color: #353434;
 }
 
 .logo {
@@ -191,11 +264,11 @@ body {
 
 .menu li {
     list-style: none;
-    margin: 5px; 
+    margin: 5px;
 }
 
 .menu li a {
-    color:  #353434;
+    color: #353434;
     text-decoration: none;
     font-weight: bold;
 }
@@ -212,6 +285,18 @@ footer {
     min-height: 100px;
     background-image: url(./hojas.jpg);
     opacity: 0.6;
+}
+
+.red_social {
+    display: flex;
+    flex-direction:row-reverse;
+    width: 50;
+}
+
+.pie {
+    display: flex;
+    align-items: end;
+    justify-content:space-between;
 }
 
 /*.container-nav {

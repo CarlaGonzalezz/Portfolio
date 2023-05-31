@@ -15,23 +15,25 @@
 <body>
   <header>
     <nav class="nav" role="navigation">
-        <div class="logo">Carla.</div>
+      <div class="logo">Carla</div>
       <ul class="menu">
         <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./about.html">Sobre mí</a></li>
-        <li><a href="./habilidades.html">Habilidades</a></li>
-        <li><a href="./contact.html">Contacto</a></li>
+        <li><a href="#SobreMi">Sobre mí</a></li>
+        <li><a href="#Habilidades">Habilidades</a></li>
+        <li><a href="#Contacto">Contacto</a></li>
       </ul>
     </nav>
-  <!--  <button class="button-menu-toggle">Menu</button>-->
+    <!--  <button class="button-menu-toggle">Menu</button>-->
   </header>
+  <br>
   <main class="contenido">
     <div class="mujer">
-      <img src="https://i.pinimg.com/564x/33/bc/5e/33bc5efe97e04f29a52c8c16da67da67.jpg" width="300" alt="mujer" />
+      <img src="https://i.pinimg.com/564x/33/bc/5e/33bc5efe97e04f29a52c8c16da67da67.jpg" width="400" alt="mujer" />
       <h1>Desarrolladora Web <br>Front-End Jr.<br></h1>
     </div>
     <section>
-      <h2>Presentación.</h2>
+      <h2>Presentación</h2>
+      <hr size="1px" align="center" width="50%" class="pgray">
       <p>¡Hola y bienvenidos a mi portfolio! Soy Carla González,
         una apasionada desarrolladora web front-end con una
         sed insaciable de aprender y crecer en el mundo del
@@ -45,31 +47,35 @@
         allowfullscreen></iframe>
     </section>-->
     <!--<section class="flork2">-->
-      <h2>Sobre mí.</h2>
-      <!--    <img src="https://i0.wp.com/imagenesparapeques.com/wp-content/uploads/2022/03/Flork-44.png?w=300&h=160&ssl=1"
+    <h2 id="SobreMi">Sobre mí</h2>
+    <hr size="1px" align="rigth" width="50%" class="pgray">
+    <!--    <img src="https://i0.wp.com/imagenesparapeques.com/wp-content/uploads/2022/03/Flork-44.png?w=300&h=160&ssl=1"
         widht="200" alt="flork compu">
     </section>-->
     <br>
     <p>Mi amor por la tecnología y el diseño me ha llevado a sumergirme en el
       mundo del desarrollo web y estoy emocionada de compartir mi viaje contigo
-      Aunque pueda ser considerada una
+      .Aunque pueda ser considerada una
       desarrolladora novata, lo que no tengo en experiencia,
       lo compensa mi entusiasmo y dedicación para crear
       experiencias web asombrosas y atractivas.</p>
     <br>
-    <h2>Habilidades.</h2>
+    <h2 id="Habilidades">Habilidades</h2>
+    <hr size="1px" align="center" width="50%" class="pgray">
     <p> Como desarrolladora front-end,
       me especializo en tecnologías como HTML,
       CSS y JavaScript. Siempre estoy buscando formas
       de mejorar la accesibilidad y optimizar el
       rendimiento de los sitios web que construyo</p>
+    <br>
     <section class="icons">
       <i class="fa-brands fa-html5 fa-2xl" style="color: #956e79;"></i>
-      <i class="fa-brands fa-css3" style="color: #956e79;"></i>
-      <i class="fa-brands fa-js" style="color: #956e79;"></i>
+      <i class="fa-brands fa-css3 fa-2xl" style="color: #956e79;"></i>
+      <i class="fa-brands fa-js fa-2xl" style="color: #956e79;"></i>
     </section>
     <br>
-    <h2>Objetivo.</h2>
+    <h2>Objetivo</h2>
+    <hr size="1px" align="center" width="50%" class="pgray">
     <p>Mi principal objetivo es
       adquirir experiencia práctica y aprender de mentores y
       profesionales experimentados en la industria.
@@ -86,26 +92,54 @@
       <img src="https://i.pinimg.com/564x/48/e8/ad/48e8ad0c3325f29f3d7060f001f24c2c.jpg" width="200" alt=" flork">
     </section>-->
     </section>
-    <section class="contacto">
-      <h2>Contacto.</h2>
+    <section id="Contacto" class="contacto">
+      <h2>Contacto</h2>
+      <hr size="1px" align="center" width="50%" class="pgray">
       <!--  <div class="button">
       <button class="btn btn-primary" onclick="showAlert()">¡Click Aquí!</button>
     </div>-->
       <br>
   </main>
-  <div class="form">
-    <form id="myForm">
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" required>
-      <button type="submit">Enviar</button>
-    </form>
+  <div class="formulario">
+    <div class="form">
+      <form id="myForm">
+        <div class="form-group">
+          <label for="name">Nombre y Apellido</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Correo</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Teléfono</label>
+          <input type="number" name="phone" id="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <input type="message" name="message" id="message" />
+        </div>
+        <div >
+          <button class="submitBtn" type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
   </div>
+  <p>Gracias por visitar mi portfolio.
+    ¡Espero poder colaborar contigo y
+    juntos construir grandes cosas en el mundo digital!</p>
   </section>
   <br>
-  <footer>
-    <p>Gracias por visitar mi portfolio.
-      ¡Espero poder colaborar contigo y
-      juntos construir grandes cosas en el mundo digital!</p>
+  <footer class="pie_pagina">
+    <div class="pie">
+      <div class="red_social">
+        <a href="https://www.linkedin.com/in/carla-gonzalez-89237723b/" class="fa-brands fa-linkedin fa-2xl"
+          style="color: #956e79;"></a>
+        <a href="https://github.com/CarlaGonzalezz" class="fa-brands fa-github fa-2xl" style="color: #956e79;"></a>
+      </div>
+      <h3>2023/Carla González</h3>
+      <h4>Desarrollado con ❤️</h4>
+    </div>
   </footer>
   <script src="mi-primer-web.js"></script>
 </body>
