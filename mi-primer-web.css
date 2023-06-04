@@ -203,7 +203,6 @@ p {
         position: absolute;
         display: flex;
         background: color #5a4d5a;
-        ;
         width: 100%;
         height: 100%;
         top: 70px;
@@ -229,7 +228,7 @@ body {
 nav {
     position: fixed;
     width: 100%;
-    background-image: url(./hojas.jpg);
+    background-image: url(https://i.pinimg.com/originals/01/da/30/01da302c4104c2007ccdefa74ff2b000.jpg);
     opacity: 0.6;
     display: flex;
     align-items: center;
@@ -283,7 +282,7 @@ nav {
 footer {
     font-size: 20px;
     min-height: 100px;
-    background-image: url(./hojas.jpg);
+    background-image: url(https://i.pinimg.com/originals/01/da/30/01da302c4104c2007ccdefa74ff2b000.jpg);
     opacity: 0.6;
 }
 
